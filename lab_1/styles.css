@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+.block {
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: large;
+    font-weight:400;
+    color: black;
+}
+
+p, a, h1, h2, th, td, li {
+    font-family: "Google Sans", sans-serif;
+}
+
+img {
+    width: 85%;
+    height: 20%;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    margin: 10px;
+}
+
+a:hover {
+    color: #808080;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin: 0;
+    width: 100%;
+    padding: 15px;
+
+}
