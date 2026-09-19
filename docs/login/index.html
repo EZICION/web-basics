@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Construct</title>
+</head>
+<body>
+    <header class="block">
+        <h1>Food Construct</h1>
+        <nav class="block"><a href="../index.html" id="first_url">О нас</a>
+            <a href="">Собрать план</a> <a href="">Заказы</a> <a href="#end">Контакты</a><a href="" class="log">Войти</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+            <h1 id="form_title">Аутентификация</h1>
+            <form action="https://httpbin.org/post" method="post" id="auth">
+                <p>
+                    <label for="login">Логин</label>
+                    <input type="text" name="login" id="login" class="text_form" required>
+                </p>
+                <p>
+                    <label for="password">Пароль</label>
+                    <input type="password" name="password" id="password" class="text_form" required>
+                </p>
+                <p>
+                    <label for="remember" class="ots_bot">
+                        <input type="checkbox" name="remember" id="remember"><span> Запомнить меня</span>
+                    </label>
+                </p>
+            </form>
+            <div id="but"><button name="submit" form="auth" id="submit">Войти</button></div>
+        </section>
+    </main>
+    <footer id="end">
+            <p id="call_us">Позвонить нам </p>
+            <a href="">+7-000-000-00-00</a>
+            <a href="../help_form/index.html" id="form">Есть вопросы? Пишите!</a>
+    </footer>
+</body>
+</html>

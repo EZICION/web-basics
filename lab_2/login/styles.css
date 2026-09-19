@@ -15,7 +15,7 @@ nav {
     text-align: center;
     margin-left: 30px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom:80px;
 }
 
 .log {
@@ -46,44 +46,71 @@ nav a:hover {
     color: red;
 }
 
-img {
-    margin-left: 30px;
-    margin-top: 10px;
-    width: 80%;
-}
-ul {
-    margin-left: 20px;
+.form {
+    margin-left: 30%;
+    margin-right: 30%;
+    min-width: 450px;
+    padding-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Google Sans';
 }
 
-h2 {
-    margin-left: 30px;
+#form_title {
+    padding-bottom: 40px;
+    text-align: center;
+}
+.form {
+    margin-bottom: 50px;
+}
+
+.form p {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 0px;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.text_form {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    font-family: 'Google Sans';
+}
+
+.ots_bot {
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+#submit {
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+    width: 110px;
+    height: 30px;
     font-family: 'Google Sans';
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(45, 93, 214);
+    background-color: rgb(26, 109, 218);
 }
 
-#about_text {
-    margin-left: 30px;
-    font-family: "Google Sans";
-    margin-bottom: 30px;
+#submit:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: #075798;
 }
 
-li {
-    margin-left: 30px;
-    padding-bottom: 10px;
-    font-family: 'Google Sans';
-}
-
-table {
-    margin-left: 30px;
-    border-collapse: collapse;
-    border: black;
-    font-family: 'Google Sans';
-    margin-bottom: 40px;
-}
-
-td {
-    padding: 20px;
+#but {
     text-align: center;
 }
 
@@ -92,6 +119,8 @@ footer {
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: fixed;
+    bottom: 0;
     font-family: 'Google Sans';
     width: 100%;
 }

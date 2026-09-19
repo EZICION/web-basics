@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Construct</title>
+</head>
+<body>
+   <header class="block">
+        <h1>Food Construct</h1>
+        <nav class="block"><a href="../index.html" id="first_url">О нас</a>
+            <a href="">Собрать план</a> <a href="">Заказы</a> <a href="#end">Контакты</a><a href="../login/index.html" class="log">Войти</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+            <h1 id="form_title">Форма обратной связи</h1>
+            <form action="https://httpbin.org/post" method="post" id="feedback" enctype="multipart/form-data">
+                <p>
+                    <label for="fullname">ФИО</label>
+                    <input type="text" name="fullname" id="fullname" class="text_form" required>
+                </p>
+                <p>
+                    <label for="email">Адрес электронной почты</label>
+                    <input type="email" name="email" placeholder="Введите email" id="email" class="text_form" required>
+                </p>
+                <p id="radio_where">
+                    <label class="ots_bot">
+                        <input type="radio" name="where_you" value="friends" checked> Рассказали друзья
+                    </label>
+                    <label class="ots_bot">
+                        <input type="radio" name="where_you" value="ads"> Реклама в интернете
+                    </label>
+                </p>
+                <p>
+                    <label for="category">Категория обращения</label>
+                    <select name="category" id="category" class="text_form">
+                        <option value="suggestion">Предложение</option>
+                        <option value="claim">Жалоба</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message_form">Текст сообщения</label>
+                    <textarea id="message_form" name="message_form" rows="10" cols="33"></textarea>
+                </p>
+                <p>
+                    <label for="files">Вложение</label>
+                    <input type="file" name="files" id="files">
+                </p>
+                <p>
+                    <label for="agree" class="ots_bot">
+                        <input type="checkbox" name="agree" id="agree" required> <span id="small">Даю согласие на обработку персональных данных</span>
+                    </label>
+                </p>
+            </form>
+            <button name="submit" form="feedback" id="submit">Отправить</button>
+        </section>
+    </main>
+    <footer id="end">
+            <p id="call_us">Позвонить нам </p>
+            <a href="">+7-000-000-00-00</a>
+            <a href="" id="form">Есть вопросы? Пишите!</a>
+    </footer>
+</body>
+</html>
