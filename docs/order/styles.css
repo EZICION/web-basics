@@ -1,0 +1,197 @@
+.card_out {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.card_in {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 30px 40px;
+    border-radius: 35px;
+    cursor: pointer;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    background-color: white;
+    font-family: 'Google Sans';
+}
+
+.card_in:hover{
+    border: 2px solid tomato;
+}
+
+.long_t {
+    flex-grow: 1;
+    font-size: large;
+    padding-bottom: 15px;
+}
+
+.food_img {
+    width: 100%;
+    border-radius: 35px;
+    padding-bottom: 10px;
+}
+
+.cost {
+    font-size: large;
+}
+
+.weight {
+    color: gray;
+}
+
+.append {
+    background-color: #f1eee9;
+    margin-top: 5px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.card_in:hover .append {
+    background-color: #d0d0cc;
+}
+
+#end_card {
+    margin-bottom: 60px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.make_order {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#order_m {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.ord_cli {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.zag {
+    font-family: 'Google Sans';
+    font-size: larger;
+    margin-bottom: 40px;
+}
+
+.lab {
+    margin-bottom: 10px;
+    font-family: 'Google Sans';
+}
+
+.ord_inp {
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 250px;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+textarea {
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 350px;
+    min-width: 250px;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-family: 'Google Sans';
+}
+
+.ord_inp:focus, textarea:focus {
+    outline: none;
+}
+
+#check {
+    margin-bottom: 20px;
+}
+
+#adres {
+    margin-bottom: 5px;
+}
+
+.attention {
+    font-family: 'Google Sans';
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.fieldset {
+    border: none;
+}
+
+.legend {
+    padding-bottom: 10px;
+    font-family: 'Google Sans';
+}
+
+#first_radio {
+    margin-bottom: 10px;
+}
+
+#second_radio {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    width: 60%;
+    min-width: 200px;
+}
+
+.buttons button {
+     flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    color: #000000;
+    font-size: 14px;
+    height: 30px;
+    margin-bottom: 40px;
+
+}
+
+@media (max-width: 800px) {
+    .card_out {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    #order_m {
+    grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .food_h {
+        text-align: center;
+    }
+
+    .card_out {
+        grid-template-columns: 1fr;
+    }
+
+    .ord_cli {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    textarea {
+        min-width: 0;
+        width: 100%;
+    }
+}
