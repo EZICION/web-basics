@@ -17,7 +17,7 @@
     font-family: 'Google Sans';
 }
 
-.card_in:hover{
+.card_in:hover, .card_in.selected{
     border: 2px solid tomato;
 }
 
@@ -100,6 +100,15 @@ main {
     border-radius: 3px;
 }
 
+.ord_cli label {
+    display: block;
+}
+
+.ord_cli textarea {
+    align-self: flex-start;
+    margin-left: 0;
+}
+
 textarea {
     margin-bottom: 20px;
     width: 80%;
@@ -113,6 +122,29 @@ textarea {
 
 .ord_inp:focus, textarea:focus {
     outline: none;
+}
+
+.dnlab {
+    font-family: 'Google Sans';
+    font-weight: bold;
+}
+
+.ord_dnt {
+    font-family: 'Google Sans';
+    padding-bottom: 20px;
+}
+
+#cost {
+    font-family: 'Google Sans';
+    padding-bottom: 30px;
+    font-size: larger;
+}
+
+#emptyMsg {
+    margin-left: 20px;
+    font-family: 'Google Sans';
+    font-size: larger;
+    font-weight: bold;
 }
 
 #check {
