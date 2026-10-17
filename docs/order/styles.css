@@ -58,6 +58,28 @@
     margin-bottom: 60px;
 }
 
+.filter {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.filter_btn {
+    font-family: 'Google Sans';
+    padding: 8px;
+    border-radius: 10px;
+    color: green;
+    background: white;
+    cursor: pointer;
+    border: none;
+}
+
+.filter_btn.active {
+    background: rgb(99, 248, 111);
+    border-color: rgb(99, 248, 111);
+}
+
 main {
     flex-grow: 1;
 }
@@ -107,6 +129,21 @@ main {
 .ord_cli textarea {
     align-self: flex-start;
     margin-left: 0;
+}
+
+.for_radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.for_radio .lab {
+    display: inline;
+    margin-bottom: 0;
+}
+
+.for_radio input {
+    margin: 0;
 }
 
 textarea {

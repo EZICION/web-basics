@@ -1,0 +1,192 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1, header div{
+    padding-top: 20px;
+    font-family: 'Google Sans';
+    margin-left: 30px;
+    text-align: left;
+}
+
+nav {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+nav a {
+    font-family: 'Google Sans';
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: tomato;
+}
+
+.active {
+    color: tomato;
+}
+
+#tit {
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 80%;
+}
+ul {
+    margin-left: 20px;
+}
+
+h2 {
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Google Sans';
+}
+
+#about_text {
+    margin-left: 30px;
+    font-family: "Google Sans";
+    margin-bottom: 30px;
+}
+
+li {
+    margin-left: 30px;
+    padding-bottom: 10px;
+    font-family: 'Google Sans';
+}
+
+table {
+    margin-left: 30px;
+    border-collapse: collapse;
+    border: black;
+    font-family: 'Google Sans';
+    margin-bottom: 40px;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Google Sans';
+    width: 100%;
+}
+
+#call_us {
+    padding-left: 30px;
+    display: inline-block;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#form {
+    float: right;
+    padding-right: 30px;
+}
+
+footer a:hover {
+    color: red;
+}
+
+@media (max-width: 800px) {
+    nav {
+    margin-left: 0;
+    justify-content: space-between;
+    }
+
+    #tit {
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        font-size: 22px;
+    }
+
+    #tit {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+    footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 10px;
+    }
+
+    #call_us {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    td {
+        font-size: 12px;
+    }
+}
+
+@media print {
+    header, footer, button, .choice{
+        display: none;
+    }
+
+    img, table, .card_in {
+    break-inside: avoid;
+    max-width: 100%;
+    }
+
+    * {
+        filter: none !important;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    .card_in {
+        border: 1px solid black;
+    }
+
+    body {
+    background: #fff;
+    color: #000;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card_in:hover{
+    border: 1px solid black !important;
+}
+}

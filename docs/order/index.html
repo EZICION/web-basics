@@ -20,19 +20,55 @@
     <main>
         <section class="food">
             <h2 class="food_h">Выберите суп</h2>
+            <div class="filter">
+                <button class="filter_btn" data-kind="fish">рыбный</button>
+                <button class="filter_btn" data-kind="meat">мясной</button>
+                <button class="filter_btn" data-kind="veg">вегетарианский</button>
+            </div>
             <div class="card_out" data-dish="soup">
                 
             </div>
         </section>
         <section class="food">
             <h2 class="food_h">Выберите главное блюдо</h2>
+            <div class="filter">
+                <button class="filter_btn" data-kind="fish">рыбное</button>
+                <button class="filter_btn" data-kind="meat">мясное</button>
+                <button class="filter_btn" data-kind="veg">вегетарианское</button>
+            </div>
             <div class="card_out" data-dish="main_food">
+                
+            </div>
+        </section>
+        <section class="food">
+            <h2 class="food_h">Выберите салат или стартер</h2>
+            <div class="filter">
+                <button class="filter_btn" data-kind="fish">рыбный</button>
+                <button class="filter_btn" data-kind="meat">мясной</button>
+                <button class="filter_btn" data-kind="veg">вегетарианский</button>
+            </div>
+            <div class="card_out" data-dish="starter">
                 
             </div>
         </section>
         <section class="food" id="end_card">
             <h2 class="food_h">Выберите напиток</h2>
+            <div class="filter">
+                <button class="filter_btn" data-kind="cold">холодное</button>
+                <button class="filter_btn" data-kind="hot">горячее</button>
+            </div>
             <div class="card_out" data-dish="drink">
+                
+            </div>
+        </section>
+        <section class="food">
+            <h2 class="food_h">Выберите десерт</h2>
+            <div class="filter">
+                <button class="filter_btn" data-kind="small">маленькая порция</button>
+                <button class="filter_btn" data-kind="medium">средняя порция</button>
+                <button class="filter_btn" data-kind="large">большая порция</button>
+            </div>
+            <div class="card_out" data-dish="dessert">
                 
             </div>
         </section>
@@ -42,7 +78,9 @@
         <form action="https://httpbin.org/post" method="post" id="order_m" enctype="multipart/form-data">
             <input type="hidden" name="soup" id="soup_input">
             <input type="hidden" name="main_food" id="main_input">
+            <input type="hidden" name="starter" id="starter_input">
             <input type="hidden" name="drink" id="drink_input">
+            <input type="hidden" name="dessert" id="dessert_input">
             <input type="hidden" name="total" id="total_input">
             <p id="emptyMsg">Ничего не выбрано</p>
             <div class="ord_cli" id="orderBlock" style="display: none;">
@@ -53,9 +91,17 @@
                 <p id="mainDish" name="main_food" class="ord_dnt">
                   Блюдо не выбрано
                 </p>
+                <label for="starter" class="dnlab">Салат или стартер</label>
+                <p id="starter" name="starter" class="ord_dnt">
+                  Блюдо не выбрано
+                </p>
                 <label for="drink" class="dnlab">Напиток</label>
                 <p id="drink" name="drink" class="ord_dnt">
                   Напиток не выбран
+                </p>
+                <label for="dessert" class="dnlab">Десерт</label>
+                <p id="dessert" name="dessert" class="ord_dnt">
+                  Блюдо не выбрано
                 </p>
                 <div id="costBlock" style="display: none">
                 <label for="id" class="dnlab">Стоимость заказа</label>
