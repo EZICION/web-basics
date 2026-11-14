@@ -1,0 +1,249 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1, header div{
+    padding-top: 20px;
+    font-family: 'Google Sans';
+    margin-left: 30px;
+    text-align: left;
+}
+
+nav {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+nav a {
+    font-family: 'Google Sans';
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: tomato;
+}
+
+
+.form {
+    margin-left: 30%;
+    margin-right: 30%;
+    min-width: 450px;
+    padding-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Google Sans';
+}
+
+#form_title {
+    padding-bottom: 40px;
+    text-align: center;
+}
+.form {
+    margin-bottom: 50px;
+}
+
+.form p {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 0px;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.text_form {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    font-family: 'Google Sans';
+}
+
+textarea {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Google Sans';
+}
+
+.text_form:focus {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Google Sans';
+}
+
+textarea:focus {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Google Sans';
+}
+
+span {
+    font-size: large;
+}
+
+.ots_bot {
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+#radio_where {
+    margin-bottom: 20px;
+}
+
+#files {
+    margin-bottom: 20px;
+}
+
+#small {
+    font-size: small
+}
+
+#submit {
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+    width: 110px;
+    height: 30px;
+    font-family: 'Google Sans';
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(45, 93, 214);
+    background-color: rgb(26, 109, 218);
+}
+
+#submit:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: #075798;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Google Sans';
+    width: 100%;
+}
+
+#call_us {
+    padding-left: 30px;
+    display: inline-block;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#form {
+    float: right;
+    padding-right: 30px;
+}
+
+footer a:hover {
+    color: red;
+}
+
+@media (max-width: 800px) {
+    nav {
+    margin-left: 0;
+    justify-content: space-between;
+    }
+
+    #tit {
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        font-size: 22px;
+    }
+
+    #tit {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+    footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 10px;
+    }
+
+    #call_us {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    td {
+        font-size: 12px;
+    }
+}
+
+@media print {
+    header, footer, button{
+        display: none;
+    }
+
+    img, table, .card_in {
+    break-inside: avoid;
+    max-width: 100%;
+    }
+
+    * {
+        filter: none !important;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    .card_in {
+        border: 1px solid black;
+    }
+
+    body {
+    background: #fff;
+    color: #000;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card_in:hover{
+    border: 1px solid black !important;
+}
+}
